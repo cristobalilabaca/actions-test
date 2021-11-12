@@ -1,5 +1,7 @@
 name: CI
 on: push
+env:
+  CI: false
 jobs:
   prod-check:
     if: ${{ github.ref == 'refs/heads/master' }}
